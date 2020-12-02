@@ -4,14 +4,11 @@
 print("Escreva um nome:")
 nome = input()
 
-ultimo = len(nome)
-reverso = (ultimo - 1) * -1
-
 nome_char_0 = nome[0]
-nome_char_ultimo = nome[ultimo - 1]
+nome_char_ultimo = nome[-1]
 nome_char_0_a_2 = nome[0:3]
 nome_char_3 = nome[3]
-nome_char_dois_ultimos = nome[reverso+2:ultimo]
+nome_char_dois_ultimos = nome[-2:]
 
 print("nome completo:", nome)
 print("primeira letra:", nome_char_0)
