@@ -14,7 +14,7 @@ aluguel = float(input())
 
 faturamento_anual = ((fitas * aluguel) / 3) * 12
 
-faturamento_multa = (fitas * (aluguel * .10) / 10) * 12
+faturamento_multa = (fitas * (aluguel * .10) / 10)
 
 fitas_final_ano = int((fitas * 1.1) - (fitas * .02))
 

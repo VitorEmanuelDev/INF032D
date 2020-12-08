@@ -8,4 +8,9 @@ eh = frase[7]
 muito = frase[8:14]
 legal = frase[-5:]
 
-print(legal)
+
+print("Tamanho da frase é:", len(frase))
+print("Tamanho da de python é:", len(python))
+print("Tamanho da eh é:", len(eh))
+print("Tamanho da muito é:", len(muito))
+print("Tamanho da legal é:", len(legal))
