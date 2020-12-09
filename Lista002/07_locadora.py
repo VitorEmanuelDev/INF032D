@@ -14,10 +14,10 @@ aluguel = float(input())
 
 faturamento_anual = ((fitas * aluguel) / 3) * 12
 
-faturamento_multa = (fitas * (aluguel * .10) / 10)
+faturamento_multa = (((fitas / 3) / 10) * aluguel * .10)
 
 fitas_final_ano = int((fitas * 1.1) - (fitas * .02))
 
 print("faturamento anual: R$", faturamento_anual)
-print("ganhos com multa: R$", faturamento_multa)
+print("ganho mensal com multa: R$", round(faturamento_multa, 2))
 print("quantidade de fitas ao final do ano:", fitas_final_ano)
