@@ -1,2 +1,2 @@
 # INF032D
-Programação Python
+Exercícios de programação em Python- INF032D
