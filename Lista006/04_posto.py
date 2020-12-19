@@ -16,7 +16,7 @@ volume = float(input("Quantos litros?"))
 
 if volume < 0:
     print("Valor inválido")
-    exit;
+    exit
 
 combustivel = combustivel.lower()
 

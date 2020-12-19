@@ -28,7 +28,7 @@ quantidade = float(input("Informe a quantidade que deseja comprar:"))
 
 if quantidade < 0:
     print("Valor inválido")
-    exit;
+    exit
 
 if carne == "file duplo":
     if quantidade <= 5:
