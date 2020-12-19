@@ -17,4 +17,3 @@ while resposta == "sim":
     print("Média atual:", round(media, 2))
     resposta = input("Deseja continuar?")
     resposta = resposta.lower()
-    if resposta != "sim":
