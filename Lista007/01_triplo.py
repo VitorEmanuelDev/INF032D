@@ -13,13 +13,12 @@ for i in range(0, n):
 
 i = 0
 
-while resposta != "999":
+while resposta != 999:
     print(lista[i] * 3)
     i += 1
     if i == n:
-        resposta = input("Deseja continuar?")
-        if resposta == "999":
+        resposta = int(input("Deseja continuar?"))
+        if resposta == 999:
             print("Até mais!")
-            exit
         else:
             i = 0

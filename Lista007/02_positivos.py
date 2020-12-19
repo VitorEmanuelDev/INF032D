@@ -9,4 +9,3 @@ while n >= 0:
     if n < 0:
         i -= 1
         print("Form digitados:", i,"números")
-        exit

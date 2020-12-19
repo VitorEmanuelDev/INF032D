@@ -12,4 +12,3 @@ while numero != 0:
     elif numero == 0:
         print("Foram digitados",soma,"números entre 100 e 200")
         print("Programa terminado")
-        exit

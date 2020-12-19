@@ -18,4 +18,3 @@ while resposta == "sim":
     resposta = input("Deseja continuar?")
     resposta = resposta.lower()
     if resposta != "sim":
-        exit
