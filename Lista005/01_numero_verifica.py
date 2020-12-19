@@ -1,9 +1,26 @@
-#1. que entre com um número e informe se o mesmo está compreendido entre 20 e 90;
+#1) João Papo-de-Pescador, homem de bem, comprou um microcomputador para controlar
+#o rendimento diário de seu trabalho. Toda vez que ele traz um peso de peixes maior que
+#o estabelecido pelo regulamento de pesca do estado de São Paulo (50 quilos) deve
+#pagar uma multa de R$ 4,00 por quilo excedente. João precisa que você faça um
+#programa que leia a variável peso (peso de peixes) e calcule o excesso. Gravar na
+#variável excesso a quantidade de quilos além do limite e na variável multa o valor da
+#multa que João deverá pagar. Imprima os dados do programa com as mensagens
+#adequadas.
 
-print("Informe um número")
-numero = int(input())
+peso = float(input("Informe o peso do pescado:"))
 
-if 20 < numero < 90:
-    print(numero, "está contido entre 20 e 90")
-else:
-    print(numero, "não está contido entre 20 e 90")
+limite = 50
+excedente = 0
+multa = 0
+
+if peso > 50:
+    excedente = peso - limite
+    multa = excedente * 4
+
+print("Peso: Kg", peso)
+print("Excesso: Kg", excedente)
+print("Multa: R$", multa)
+
+
+
+
