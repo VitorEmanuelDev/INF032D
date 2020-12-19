@@ -36,7 +36,7 @@ if tamanho >= tamanho_lata:
         custo_complementar = galoes * 25
         custo = custo_complementar + custo
         print("O custo da pintura será de: R$", custo)
-        print("Você vai precisar de", latas, "latas e de", galoes," galões")
+        print("Você vai precisar de", latas, "latas e de", galoes,"galões")
 
 
 if tamanho_galao * 3 < tamanho <= tamanho_lata:
