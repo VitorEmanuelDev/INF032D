@@ -14,6 +14,10 @@
 combustivel = input("Álcool (A) ou Gasolina (G)?")
 volume = float(input("Quantos litros?"))
 
+if volume < 0:
+    print("Valor inválido")
+    exit;
+
 combustivel = combustivel.lower()
 
 if combustivel == "a":
