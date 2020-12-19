@@ -24,26 +24,29 @@ tamanho_galao = 6 * galao
 if tamanho >= tamanho_lata:
     resto_lata = int(tamanho % tamanho_lata)
     tamanho_certo = tamanho - resto_lata
-    latas = tamanho_certo / tamanho_lata
+    latas = math.ceil(tamanho_certo / tamanho_lata)
     custo = float(latas * 80)
+
     if resto_lata == 0:
         print("O custo da pintura será de: R$", custo)
+        print("Você vai precisar de", latas,"latas")
 
-if resto_lata != 0 and resto_lata <= tamanho_galao * 3:
-    galoes = math.ceil(float(resto_lata / tamanho_galao))
-    custo_complementar = galoes * 25
-    custo = custo_complementar + custo
-    print("O custo da pintura será de: R$", custo)
-
-if tamanho < tamanho_lata:
-    resto_galao = int(tamanho % tamanho_galao)
-    tamanho_certo = tamanho - resto_galao
-    galoes = tamanho_certo / tamanho_galao
-    custo = float(galoes * 25)
-    if resto_galao == 0:
+    if resto_lata != 0 and resto_lata <= tamanho_galao * 3:
+        galoes = math.ceil(float(resto_lata / tamanho_galao))
+        custo_complementar = galoes * 25
+        custo = custo_complementar + custo
         print("O custo da pintura será de: R$", custo)
+        print("Você vai precisar de", latas, "latas e de", galoes," galões")
 
-if tamanho < tamanho_lata and tamanho >= tamanho_lata * .9:
-    custo = 80.0
+
+if tamanho_galao * 3 < tamanho <= tamanho_lata:
+    latas = math.ceil(float(tamanho / tamanho_lata))
+    custo = latas * 80
     print("O custo da pintura será de: R$", custo)
+    print("Você vai precisar de", latas, "lata")
 
+if tamanho <= tamanho_galao * 3:
+    galoes = math.ceil(float(tamanho / tamanho_galao))
+    custo = galoes * 25
+    print("O custo da pintura será de: R$", custo)
+    print("Você vai precisar de", galoes, "galões")
