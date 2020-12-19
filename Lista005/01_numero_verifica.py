@@ -13,7 +13,7 @@ limite = 50
 excedente = 0
 multa = 0
 
-if peso > 50:
+if peso > limite:
     excedente = peso - limite
     multa = excedente * 4
 
