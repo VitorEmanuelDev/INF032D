@@ -10,7 +10,9 @@ print("Informe o valor de cada número:")
 for i in range(0, n):
     valor = int(input())
     lista.append(valor)
+
 i = 0
+
 while resposta != "999":
     print(lista[i] * 3)
     resposta = input("Deseja continuar?")
