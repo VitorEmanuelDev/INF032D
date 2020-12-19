@@ -15,11 +15,11 @@ i = 0
 
 while resposta != "999":
     print(lista[i] * 3)
-    resposta = input("Deseja continuar?")
-    if resposta == "999":
-        print("Até mais!")
-        exit
-    else:
-        i += 1
-        if i == n:
+    i += 1
+    if i == n:
+        resposta = input("Deseja continuar?")
+        if resposta == "999":
+            print("Até mais!")
+            exit
+        else:
             i = 0
