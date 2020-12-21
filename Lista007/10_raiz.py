@@ -4,13 +4,16 @@
 
 n = 10
 lista_raiz = []
+i = 0
 
-for i in range(0, 10):
+while i < n:
     numero = float(input("Informe um número:"))
-    if numero < 0:
-        numero = numero * -1
-    raiz = round(numero ** .5, 2)
-    lista_raiz.append(raiz)
+    if numero > 0:
+        raiz = round(numero ** .5, 2)
+        lista_raiz.append(raiz)
+        i += 1
+    else:
+        print("Informe um número positivo.")
 
 print("Raízes:")
 print(lista_raiz)
