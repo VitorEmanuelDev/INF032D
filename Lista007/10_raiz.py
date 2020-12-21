@@ -13,7 +13,7 @@ while i < n:
         lista_raiz.append(raiz)
         i += 1
     else:
-        print("Informe um número positivo.")
+        print("Tente nvamente, mas informe um número positivo.")
 
 print("Raízes:")
 print(lista_raiz)
